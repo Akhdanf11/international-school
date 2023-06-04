@@ -23,7 +23,6 @@
                     <div class="card-header">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-Login-tab" data-toggle="tab" data-target="#nav-Login" type="button" role="tab" aria-controls="nav-Login" aria-selected="true">Login</button>
-                            <button class="nav-link" id="nav-Register-tab" data-toggle="tab" data-target="#nav-Register" type="button" role="tab" aria-controls="nav-Register" aria-selected="false">Register</button>
                           </div>                                   
                     </div>
                     <div class="card-body">
@@ -31,7 +30,7 @@
                             <div class="tab-pane fade show active" id="nav-Login" role="tabpanel" aria-labelledby="nav-Login-tab">
                                 <form id="login-form">
                                     <div class="form-group">
-                                        <label for="InputUsername">Username</label>
+                                        <label for="InputUsername">NIP</label>
                                         <input required type="text" name="username" id="username-field" class="form-control" id="InputUsername" aria-describedby="usernameHelp">
                                       </div>
                                     <div class="form-group">
@@ -41,28 +40,11 @@
                                     <button type="submit" class="btn btn-primary btn-block" onclick = "Redirect();">Submit</button>
                                   </form>
                             </div>
-                            <div class="tab-pane fade" id="nav-Register" role="tabpanel" aria-labelledby="nav-Register-tab">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="InputUsername">Username</label>
-                                        <input required type="text" class="form-control" id="InputUsername" aria-describedby="usernameHelp">
-                                      </div>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Email address</label>
-                                      <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleInputPassword1">Password</label>
-                                      <input required type="password" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                                  </form>
-                            </div>
                           </div>
                     </div>
                     <div class="card-footer text-muted text-center">
                       Come Sign In to Explore
-                      <h6><a href="loginguru.html" class="text-dark"><b>Login as Teacher?</b></a></h6>
+                      <h6><a href="index.html" class="text-dark"><b>Login as Students?</b></a></h6>
                     </div>
                   </div>
             </div>
@@ -71,7 +53,7 @@
 
     <script>
       function Redirect() {
-        window.location = "dashboard.html";
+        window.location = "guru/dashboard.html";
      }
     </script>
 </body>
